@@ -35,7 +35,9 @@ jobs:
         run: chmod +x ./INF2007_MOBILEDEV/lab1/gradlew
 
       - name: Build with Gradle
-        run: ./INF2007_MOBILEDEV/lab1/gradlew build
+        run: ./gradlew build
+        working-directory: ./INF2007_MOBILEDEV/lab1
+
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
