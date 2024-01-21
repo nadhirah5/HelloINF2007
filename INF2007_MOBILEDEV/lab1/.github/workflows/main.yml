@@ -37,6 +37,10 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
+      - name: List files in the current directory
+        run: ls -l
+
+
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
